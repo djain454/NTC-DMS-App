@@ -37,7 +37,7 @@ public class UserRegisterActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance().getReference("Users");
         setContentView(R.layout.activity_user_register);
-        email = (EditText)findViewById(R.id.email);
+        email = (EditText)findViewById(R.id.editText1);
         pass = (EditText)findViewById(R.id.newpass);
         name = (EditText)findViewById(R.id.name);
         designation = (EditText)findViewById(R.id.designation);

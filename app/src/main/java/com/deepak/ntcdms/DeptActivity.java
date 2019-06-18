@@ -12,6 +12,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class DeptActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
@@ -76,7 +78,9 @@ public class DeptActivity extends AppCompatActivity {
                                 menuItem.setChecked(true);
                                 // close drawer when item is tapped
                                 mDrawerLayout.closeDrawers();
+                                FirebaseAuth.getInstance().signOut();
                                 Intent j = new Intent(DeptActivity.this, MainActivity.class);
+                                j.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                 startActivity(j);
 
                                 break;

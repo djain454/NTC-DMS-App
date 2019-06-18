@@ -48,6 +48,7 @@ public class Mpage extends AppCompatActivity {
                                 // close drawer when item is tapped
                                 mDrawerLayout.closeDrawers();
                                 Intent r = new Intent(Mpage.this, HomeActivity.class);
+                                r.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                 startActivity(r);
                                 break;
                             case R.id.HR:
@@ -56,6 +57,7 @@ public class Mpage extends AppCompatActivity {
                                 // close drawer when item is tapped
                                 mDrawerLayout.closeDrawers();
                                 Intent i = new Intent(Mpage.this, HRpage.class);
+                                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                 startActivity(i);
                                 break;
                             case R.id.mark:
@@ -64,6 +66,7 @@ public class Mpage extends AppCompatActivity {
                                 // close drawer when item is tapped
                                 mDrawerLayout.closeDrawers();
                                 Intent x = new Intent(Mpage.this, Mpage.class);
+                                x.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                 startActivity(x);
                                 break;
                             case R.id.tech:
@@ -72,6 +75,7 @@ public class Mpage extends AppCompatActivity {
                                 // close drawer when item is tapped
                                 mDrawerLayout.closeDrawers();
                                 Intent k = new Intent(Mpage.this, Tpage.class);
+                                k.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                 startActivity(k);
                                 break;
                             case R.id.fin:
@@ -80,6 +84,7 @@ public class Mpage extends AppCompatActivity {
                                 // close drawer when item is tapped
                                 mDrawerLayout.closeDrawers();
                                 Intent l = new Intent(Mpage.this, Fpage.class);
+                                l.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                 startActivity(l);
                                 break;
                             case R.id.logout:
@@ -87,8 +92,11 @@ public class Mpage extends AppCompatActivity {
                                 menuItem.setChecked(true);
                                 // close drawer when item is tapped
                                 mDrawerLayout.closeDrawers();
+                                FirebaseAuth.getInstance().signOut();
                                 Intent j = new Intent(Mpage.this, MainActivity.class);
+                                j.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                 startActivity(j);
+                                finish();
 
                                 break;
 

@@ -158,7 +158,9 @@ public class PassActivity extends AppCompatActivity {
                                 menuItem.setChecked(true);
                                 // close drawer when item is tapped
                                 mDrawerLayout.closeDrawers();
+                                FirebaseAuth.getInstance().signOut();
                                 Intent j = new Intent(PassActivity.this, MainActivity.class);
+                                j.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                 startActivity(j);
 
                                 break;

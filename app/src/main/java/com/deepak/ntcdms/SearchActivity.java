@@ -20,6 +20,7 @@ import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -103,7 +104,9 @@ public class SearchActivity extends AppCompatActivity {
                                 menuItem.setChecked(true);
                                 // close drawer when item is tapped
                                 mDrawerLayout.closeDrawers();
+                                FirebaseAuth.getInstance().signOut();
                                 Intent j = new Intent(SearchActivity.this, MainActivity.class);
+                                j.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                 startActivity(j);
 
                                 break;

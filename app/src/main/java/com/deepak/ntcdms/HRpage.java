@@ -86,7 +86,9 @@ public class HRpage extends AppCompatActivity {
                                 menuItem.setChecked(true);
                                 // close drawer when item is tapped
                                 mDrawerLayout.closeDrawers();
+                                FirebaseAuth.getInstance().signOut();
                                 Intent j = new Intent(HRpage.this, MainActivity.class);
+                                j.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                 startActivity(j);
 
                                 break;

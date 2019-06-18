@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
                             if (task.isSuccessful()) {
                                 FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
                                 Intent i = new Intent(getApplicationContext(), HomeActivity.class);
+                                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                     startActivity(i);
 
                             }
@@ -59,7 +60,12 @@ public class MainActivity extends AppCompatActivity {
     }
     public void passwordforget(View view){
         Intent i = new Intent(this , ForgotPasswordActivity.class);
+        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(i);
     }
-
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        System.exit(1);
+    }
 }
