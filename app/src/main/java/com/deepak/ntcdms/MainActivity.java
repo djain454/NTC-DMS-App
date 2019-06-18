@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         usernameET = (EditText) findViewById(R.id.editText1);
         passwordET = (EditText) findViewById(R.id.editText2);
-        
+
     }
 
     public void SignIn(View view) {
