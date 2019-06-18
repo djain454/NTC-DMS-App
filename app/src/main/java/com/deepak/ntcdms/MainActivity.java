@@ -66,6 +66,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed(){
         super.onBackPressed();
-        System.exit(1);
+        finish();
     }
 }
