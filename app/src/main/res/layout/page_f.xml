@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/buttonshape"
-                android:minHeight="2 dp"
+                android:minHeight="2dp"
                 android:onClick="fup"
                 android:text="Upload Document" />
 
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/buttonshape"
-                android:minHeight="2 dp"
+                android:minHeight="2dp"
                 android:onClick="fview"
                 android:text="View Documents" />
             <!--<Button-->
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/buttonshape"
-                android:minHeight="2 dp"
+                android:minHeight="2dp"
                 android:text="View Policies" />
 
 
