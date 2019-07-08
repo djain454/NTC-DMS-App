@@ -43,11 +43,11 @@ public class PassActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pass);
         firebaseAuth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance().getReference("Users");
-        oldpass1 = (EditText) findViewById(R.id.oldpass);
-        newpass1=(EditText) findViewById(R.id.newpass);
-        displaymsg=(TextView)findViewById(R.id.message);
-        newpassconfirm=(EditText)findViewById(R.id.confirmpass);
-        confirm=(Button)findViewById(R.id.confirmbutton);
+        oldpass1 = findViewById(R.id.oldpass);
+        newpass1= findViewById(R.id.newpass);
+        displaymsg= findViewById(R.id.message);
+        newpassconfirm= findViewById(R.id.confirmpass);
+        confirm= findViewById(R.id.confirmbutton);
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

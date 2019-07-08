@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         firebaseAuth = FirebaseAuth.getInstance();
-        usernameET = (EditText) findViewById(R.id.editText1);
-        passwordET = (EditText) findViewById(R.id.editText2);
+        usernameET = findViewById(R.id.editText1);
+        passwordET = findViewById(R.id.editText2);
 
     }
 

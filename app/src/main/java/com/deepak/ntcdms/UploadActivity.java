@@ -69,7 +69,7 @@ public class UploadActivity extends AppCompatActivity {
         filesdatabase = FirebaseDatabase.getInstance().getReference("Files");
         mDrawerLayout = findViewById(R.id.drawer_layout);
         progressBar = findViewById(R.id.progressbar);
-        selectdept = (TextView)findViewById(R.id.selectdept);
+        selectdept = findViewById(R.id.selectdept);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
@@ -175,9 +175,9 @@ public class UploadActivity extends AppCompatActivity {
             ArrayAdapter<String> adapter3 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items3);
             dropdown3.setAdapter(adapter3);
         }
-        type=(Spinner)findViewById(R.id.spinner1);
-        office=(Spinner)findViewById(R.id.spinner2);
-        dept=(Spinner)findViewById(R.id.spinner3);
+        type= findViewById(R.id.spinner1);
+        office= findViewById(R.id.spinner2);
+        dept= findViewById(R.id.spinner3);
         type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -210,7 +210,7 @@ public class UploadActivity extends AppCompatActivity {
 
             }
         });
-        subject=(EditText)findViewById(R.id.subject);
+        subject= findViewById(R.id.subject);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();

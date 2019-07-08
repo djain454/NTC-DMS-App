@@ -16,12 +16,12 @@ public class DownloadActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_download);
         filesdbs = (filesdb) getIntent().getSerializableExtra("filesdb");
-        subject = (TextView) findViewById(R.id.subjectz);
-        type = (TextView) findViewById(R.id.typez);
-        office = (TextView) findViewById(R.id.officez);
-        dept = (TextView)findViewById(R.id.deptz);
-        uploaddate = (TextView)findViewById(R.id.uploaddate);
-        uploaduser = (TextView)findViewById(R.id.uploaduser);
+        subject = findViewById(R.id.subjectz);
+        type = findViewById(R.id.typez);
+        office = findViewById(R.id.officez);
+        dept = findViewById(R.id.deptz);
+        uploaddate = findViewById(R.id.uploaddate);
+        uploaduser = findViewById(R.id.uploaduser);
         subject.setText("Subject : " +filesdbs.getSubject());
         type.setText("Type : " +filesdbs.getType());
         office.setText("Office : "+filesdbs.getOffice());

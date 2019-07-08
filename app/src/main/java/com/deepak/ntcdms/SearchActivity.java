@@ -50,7 +50,7 @@ public class SearchActivity extends AppCompatActivity {
         mDrawerLayout = findViewById(R.id.drawer_layout);
         filedatabase = FirebaseDatabase.getInstance().getReference("Files");
         filesdbList = new ArrayList<>();
-        listview = (ListView)findViewById(R.id.listview);
+        listview = findViewById(R.id.listview);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
@@ -131,8 +131,8 @@ public class SearchActivity extends AppCompatActivity {
         final String[] items4 = new String[]{"Select", "Accounts", "Admin & PR", "Asset sales", "Company Secretary", "Costing", "Cotton" ,
                 "DataCentre", "Finance", "General", "Hindi", "HR", "IT", "Internal Audit", "Legal", "Marketing", "Materials", "Production",
                 "Sale Purchase", "Stores", "Technical", "Vigilance"};
-        searchbydept = (TextView)findViewById(R.id.searchbydept);
-        searchbydeptbut = (Button)findViewById(R.id.searchbydeptbut);
+        searchbydept = findViewById(R.id.searchbydept);
+        searchbydeptbut = findViewById(R.id.searchbydeptbut);
         if(!TextUtils.isEmpty(entered_dept)){
             dropdown4.setVisibility(View.GONE);
             searchbydeptbut.setVisibility(View.GONE);
@@ -161,11 +161,11 @@ public class SearchActivity extends AppCompatActivity {
                 //Intent intent = new Intent(Intent.ACTION_VIEW);
                 //intent.setData(Uri.parse(filesdbs.getUrl()));
                 Intent intent = new Intent(getApplicationContext(), DownloadActivity.class);
-                intent.putExtra("filesdb", (Serializable) filesdbList.get(position));
+                intent.putExtra("filesdb", filesdbList.get(position));
                 startActivity(intent);
             }
         });
-        subject=(EditText)findViewById(R.id.subject);
+        subject= findViewById(R.id.subject);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();

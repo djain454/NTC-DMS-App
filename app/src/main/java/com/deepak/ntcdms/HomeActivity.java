@@ -111,7 +111,7 @@ public class HomeActivity extends AppCompatActivity {
         actionbar.setDisplayHomeAsUpEnabled(true);
         actionbar.setHomeAsUpIndicator(R.drawable.ic_menu);
         FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
-        final TextView tvName = (TextView)findViewById(R.id.logname);
+        final TextView tvName = findViewById(R.id.logname);
         String uid = firebaseUser.getUid();
         database.child(uid).addValueEventListener(new ValueEventListener() {
             @Override
