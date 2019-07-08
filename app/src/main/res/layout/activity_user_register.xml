@@ -131,6 +131,7 @@
                     android:layout_marginTop="400dp"
                     android:ems="10"
                     android:gravity="center"
+                    android:popupBackground="@drawable/buttonshape"
                     android:textSize="18sp"
                     android:typeface="normal"
                     app:fontFamily="sans-serif" />
@@ -144,6 +145,7 @@
                     android:layout_marginTop="465dp"
                     android:ems="10"
                     android:gravity="center"
+                    android:popupBackground="@drawable/buttonshape"
                     android:textSize="18sp"
                     android:typeface="normal"
                     app:fontFamily="sans-serif" />
@@ -157,6 +159,7 @@
                     android:layout_marginTop="530dp"
                     android:ems="10"
                     android:gravity="center"
+                    android:popupBackground="@drawable/buttonshape"
                     android:textSize="18sp"
                     android:typeface="normal"
                     app:fontFamily="sans-serif" />
@@ -171,6 +174,7 @@
                     android:background="@drawable/buttonshape"
                     android:gravity="center"
                     android:onClick="confirm"
+                    android:padding="2dp"
                     android:text="Create User"
                     android:textSize="18sp"
                     android:typeface="normal"

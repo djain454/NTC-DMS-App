@@ -41,6 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/buttonshape"
+                android:minHeight="2 dp"
                 android:onClick="fup"
                 android:text="Upload Document" />
 
@@ -49,6 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/buttonshape"
+                android:minHeight="2 dp"
                 android:onClick="fview"
                 android:text="View Documents" />
             <!--<Button-->
@@ -62,6 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/buttonshape"
+                android:minHeight="2 dp"
                 android:text="View Policies" />
 
 
@@ -73,9 +76,10 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:background="#fff"
         android:fitsSystemWindows="true"
-        app:menu="@menu/drawer_view2"
-        app:headerLayout="@layout/nav_header" />
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_view2" />
 
 
 

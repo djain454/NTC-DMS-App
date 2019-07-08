@@ -88,7 +88,7 @@
                     android:layout_width="270dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
-                    android:background="@android:drawable/btn_dropdown"
+                    android:background="@drawable/textviewshape"
                     android:popupBackground="@drawable/buttonshape"
                     android:spinnerMode="dropdown" />
 
@@ -103,18 +103,18 @@
             </LinearLayout>
 
 
-
             <ListView
                 android:id="@+id/listview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                android:scrollbars="vertical"
-                android:textSize="18sp"
-                android:typeface="normal"
-                app:fontFamily="sans-serif"
                 android:divider="#333"
-                android:dividerHeight="4px"/>
+                android:dividerHeight="8px"
+                android:scrollbars="vertical"
+                android:textSize="24sp"
+                android:typeface="normal"
+                app:fontFamily="sans-serif" />
         </LinearLayout>
     </FrameLayout>
 

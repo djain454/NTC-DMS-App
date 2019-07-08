@@ -123,6 +123,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/buttonshape"
                 android:onClick="downl"
+                android:padding="3dp"
                 android:text="Download File"
                 android:textSize="18sp"
                 android:textStyle="bold"

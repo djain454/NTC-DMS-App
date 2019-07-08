@@ -72,6 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/textviewshape"
+                android:popupBackground="@drawable/buttonshape"
                 android:spinnerMode="dropdown" />
 
             <TextView
@@ -84,12 +85,13 @@
 
 
             <Spinner
-                android:layout_marginTop="10dp"
                 android:id="@+id/spinner2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:drawable/btn_dropdown"
-                android:spinnerMode="dropdown"/>
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textviewshape"
+                android:popupBackground="@drawable/buttonshape"
+                android:spinnerMode="dropdown" />
 
             <TextView
                 android:id="@+id/selectdept"
@@ -101,17 +103,19 @@
                 android:textStyle="bold" />
 
             <Spinner
-                android:layout_marginTop="10dp"
                 android:id="@+id/spinner3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:drawable/btn_dropdown"
-                android:spinnerMode="dropdown"/>
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textviewshape"
+                android:popupBackground="@drawable/buttonshape"
+                android:spinnerMode="dropdown" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center">
+                android:gravity="center"
+                android:padding="10dp">
 
 
                 <Button
@@ -133,10 +137,10 @@
             <ProgressBar
                 android:id="@+id/progressbar"
                 style="@android:style/Widget.ProgressBar.Large"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
                 android:visibility="gone" />
         </LinearLayout>
     </FrameLayout>

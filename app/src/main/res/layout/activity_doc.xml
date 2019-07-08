@@ -42,26 +42,26 @@
                 <Button
                     android:id="@+id/upload"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:background="@drawable/buttonshape"
 
+                    android:minHeight="2dp"
                     android:onClick="upDoc"
-                    android:padding="35dp"
                     android:text="Upload Documents" />
 
 
                 <Button
                     android:id="@+id/search"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:background="@drawable/buttonshape"
-                    android:onClick="seArch"
+                    android:minHeight="2dp"
 
-                    android:padding="35dp"
+                    android:onClick="seArch"
                     android:text="Search Documents" />
 
 
