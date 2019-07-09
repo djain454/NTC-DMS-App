@@ -10,14 +10,14 @@
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bkgd2"
+        android:background="@drawable/back"
         >
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#F06292"
+            android:background="@null"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
 
         <ScrollView
@@ -168,12 +168,13 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="595dp"
+                    android:background="@drawable/buttonshape"
                     android:gravity="center"
+                    android:onClick="confirm"
                     android:text="Create User"
                     android:textSize="18sp"
                     android:typeface="normal"
-                    app:fontFamily="sans-serif"
-                    android:onClick="confirm"/>
+                    app:fontFamily="sans-serif" />
 
             </RelativeLayout>
 

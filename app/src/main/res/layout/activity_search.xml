@@ -10,14 +10,14 @@
         android:id="@+id/content_frame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bkgd2"
+        android:background="@drawable/back"
         >
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#F06292"
+            android:background="@null"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
 
         <LinearLayout
@@ -63,8 +63,9 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Search"
-                    android:onClick="searchbysub"/>
+                    android:background="@drawable/buttonshape"
+                    android:onClick="searchbysub"
+                    android:text="Search" />
 
             </LinearLayout>
 
@@ -82,18 +83,20 @@
                 android:layout_height="wrap_content"
                 android:gravity="center">
 
-            <Spinner
-                android:layout_marginTop="3dp"
-                android:id="@+id/spinner4"
-                android:layout_width="270dp"
-                android:layout_height="wrap_content"
-                android:background="@android:drawable/btn_dropdown"
-                android:spinnerMode="dropdown"/>
+                <Spinner
+                    android:id="@+id/spinner4"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:popupBackground="@drawable/buttonshape"
+                    android:spinnerMode="dropdown" />
 
                 <Button
                     android:id="@+id/searchbydeptbut"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/buttonshape"
                     android:onClick="searchbydept"
                     android:text="Search" />
 

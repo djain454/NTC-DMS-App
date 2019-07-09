@@ -10,14 +10,14 @@
         android:id="@+id/content_frame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bkgd2"
+        android:background="@drawable/back"
         >
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#F06292"
+            android:background="@null"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
 
         <LinearLayout
@@ -39,29 +39,30 @@
 
                 >
 
-            <Button
-                android:id="@+id/upload"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_gravity="center"
-                android:padding="35dp"
-                android:text="Upload Documents"
+                <Button
+                    android:id="@+id/upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonshape"
 
-                android:onClick="upDoc"
-                android:layout_weight="1"
-                />
+                    android:onClick="upDoc"
+                    android:padding="35dp"
+                    android:text="Upload Documents" />
 
 
-            <Button
-                android:id="@+id/search"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_gravity="center"
-                android:padding="35dp"
-                android:layout_weight="1"
-                android:text="Search Documents"
+                <Button
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonshape"
+                    android:onClick="seArch"
 
-                android:onClick="seArch"/>
+                    android:padding="35dp"
+                    android:text="Search Documents" />
 
 
 

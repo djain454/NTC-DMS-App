@@ -10,14 +10,14 @@
         android:id="@+id/content_frame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bkgd2"
+        android:background="@drawable/back"
         >
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#F06292"
+            android:background="@null"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
 
         <LinearLayout
@@ -121,8 +121,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Confirm"
                 android:layout_marginTop="20dp"
+                android:background="@drawable/buttonshape"
+                android:text="Confirm"
                 android:textSize="18sp"
                 android:typeface="normal"
                 app:fontFamily="sans-serif" />

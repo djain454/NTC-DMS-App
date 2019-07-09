@@ -10,14 +10,14 @@
         android:id="@+id/content_frame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bkgd2"
+        android:background="@drawable/back"
         >
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#F06292"
+            android:background="@null"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
 
         <LinearLayout
@@ -115,17 +115,19 @@
                     app:fontFamily="sans-serif"
                     />
             </LinearLayout>
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="downl"
                 android:text="Download File"
-                android:textStyle="bold"
                 android:textSize="18sp"
+                android:textStyle="bold"
                 android:typeface="normal"
-                app:fontFamily="sans-serif"
-                android:onClick="downl" />
+                app:fontFamily="sans-serif" />
 
 
 

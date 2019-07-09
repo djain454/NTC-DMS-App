@@ -10,14 +10,14 @@
         android:id="@+id/content_frame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bkgd2"
+        android:background="@drawable/back"
         >
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#F06292"
+            android:background="@null"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
 
         <LinearLayout
@@ -43,32 +43,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Human Resources"
+                android:background="@drawable/buttonshape"
                 android:onClick="HRbutton"
 
-                />
+                android:text="Human Resources" />
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Marketing"
+                android:background="@drawable/buttonshape"
                 android:onClick="Mbutton"
 
-                />
+                android:text="Marketing" />
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Technical"
+                android:background="@drawable/buttonshape"
                 android:onClick="Tbutton"
-                />
+                android:text="Technical" />
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Finance"
+                android:background="@drawable/buttonshape"
                 android:onClick="Fbutton"
-                />
+                android:text="Finance" />
 
 
         </LinearLayout>
