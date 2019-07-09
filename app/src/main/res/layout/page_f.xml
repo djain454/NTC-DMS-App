@@ -35,20 +35,22 @@
                 android:layout_weight="1"
                 android:textColor="#FFFFFF"
                 />
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Upload Document"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape"
                 android:onClick="fup"
-                android:layout_weight="1"
-                />
+                android:text="Upload Document" />
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="View Documents"
-                android:onClick="fview"
                 android:layout_weight="1"
-                />
+                android:background="@drawable/buttonshape"
+                android:onClick="fview"
+                android:text="View Documents" />
             <!--<Button-->
             <!--android:layout_width="match_parent"-->
             <!--android:layout_height="wrap_content"-->
@@ -58,9 +60,9 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="View Policies"
                 android:layout_weight="1"
-                />
+                android:background="@drawable/buttonshape"
+                android:text="View Policies" />
 
 
         </LinearLayout>

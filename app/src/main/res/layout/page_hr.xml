@@ -10,14 +10,14 @@
     android:id="@+id/content_frame"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bkgd2"
+    android:background="@drawable/back"
     >
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#F06292"
+        android:background="@null"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
 
 <LinearLayout
@@ -35,20 +35,22 @@
         android:layout_weight="1"
         android:textColor="#FFFFFF"
         />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Upload Document"
+        android:layout_weight="1"
+        android:background="@drawable/buttonshape"
         android:onClick="fup"
-        android:layout_weight="1"
-        />
+        android:text="Upload Document" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="View Documents"
-        android:onClick="fview"
         android:layout_weight="1"
-        />
+        android:background="@drawable/buttonshape"
+        android:onClick="fview"
+        android:text="View Documents" />
     <!--<Button-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"-->
@@ -58,9 +60,9 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="View Policies"
         android:layout_weight="1"
-        />
+        android:background="@drawable/buttonshape"
+        android:text="View Policies" />
 
 
 </LinearLayout>
