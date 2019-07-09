@@ -88,7 +88,7 @@ public class HomeActivity extends AppCompatActivity {
                                 mDrawerLayout.closeDrawers();
                                 FirebaseAuth.getInstance().signOut();
                                 Intent j = new Intent(HomeActivity.this, MainActivity.class);
-                                j.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
                                 startActivity(j);
 
                                 break;

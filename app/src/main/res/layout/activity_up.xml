@@ -54,9 +54,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:background="#FFFFFF"
+                android:background="@drawable/rounded_editext"
                 android:inputType="textAutoCorrect|textAutoComplete|textEmailSubject"
-                android:padding="8dp"/>
+                android:padding="8dp" />
 
             <TextView
                 android:layout_marginTop="10dp"
@@ -67,12 +67,12 @@
                 android:text="Select Type"/>
 
             <Spinner
-                android:layout_marginTop="10dp"
                 android:id="@+id/spinner1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:drawable/btn_dropdown"
-                android:spinnerMode="dropdown"/>
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textviewshape"
+                android:spinnerMode="dropdown" />
 
             <TextView
                 android:layout_marginTop="10dp"

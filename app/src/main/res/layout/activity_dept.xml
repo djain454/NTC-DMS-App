@@ -44,8 +44,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/buttonshape"
-                android:onClick="HRbutton"
+                android:minHeight="2dip"
 
+                android:onClick="HRbutton"
                 android:text="Human Resources" />
 
             <Button
@@ -53,8 +54,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/buttonshape"
-                android:onClick="Mbutton"
+                android:minHeight="2dip"
 
+                android:onClick="Mbutton"
                 android:text="Marketing" />
 
             <Button
@@ -62,6 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/buttonshape"
+                android:minHeight="2dip"
                 android:onClick="Tbutton"
                 android:text="Technical" />
 
@@ -70,6 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/buttonshape"
+                android:minHeight="2dip"
                 android:onClick="Fbutton"
                 android:text="Finance" />
 

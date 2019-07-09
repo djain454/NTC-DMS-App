@@ -111,7 +111,7 @@ public class UserRegisterActivity extends AppCompatActivity {
                                     .build();
                             firebaseUser.updateProfile(updatename);
                             firebaseAuth.signOut();
-                            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                            Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
                             startActivity(intent);
                             Toast.makeText(getApplicationContext(), "User Created", Toast.LENGTH_LONG).show();
                         }
